@@ -7,6 +7,7 @@ para: Teste de Seleção para vaga de Estagiário Python da Altox Lab
 
 # Imports
 from rdkit import Chem
+from rdkit.Chem import Draw
 
 # Teste
-print(Chem.MolFromSmiles("CCOCCNSC=0"))
+print(Draw.MolToImage(Chem.MolFromSmiles("CCOCCNSC=O"))) # PIL.Image.Image
